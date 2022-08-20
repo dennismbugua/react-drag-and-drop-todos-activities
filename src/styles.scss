@@ -1,0 +1,42 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  background: skyblue;
+}
+h3 {
+  font-weight: 200;
+  text-shadow: 1px 1px 3px gray;
+}
+.container {
+  height: 90vh;
+  width: 80vw;
+  margin: 0 auto;
+  padding: 10px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.small-box {
+  width: 40%;
+  box-shadow: 3px 3px 50px 2px gray;
+}
+
+.task {
+  border: 1px solid white;
+  margin: 10px;
+  box-shadow: 1px 3px 20px gray;
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dragged {
+  background-color: rgba(200, 200, 200, 0.3);
+  opacity: 0.5;
+  cursor: pointer;
+}
+.dragged-over {
+  background: rgba(255, 0, 0, 0.2);
+  .task {
+    background: rgba(255,0,0,0.1);
+  }
+}
